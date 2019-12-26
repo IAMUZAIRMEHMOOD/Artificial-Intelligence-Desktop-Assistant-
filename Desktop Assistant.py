@@ -26,3 +26,5 @@ def wishme():
     else:
         speak("Good Evening!")
     speak("Hello! I am your Desktop Assistant.Please tell me how may i Help You")
+    if __name__ == "__main__":
+         wishme()    
