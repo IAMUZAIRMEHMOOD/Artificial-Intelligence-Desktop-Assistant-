@@ -26,5 +26,46 @@ def wishme():
     else:
         speak("Good Evening!")
     speak("Hello! I am your Desktop Assistant.Please tell me how may i Help You")
-    if __name__ == "__main__":
-         wishme()    
+    def takeCommand():
+        #It takes microphone input from user and returs string output 
+
+     r = sr.Recognizer()
+     with sr.Microphone() as source:
+        print("Listening...")
+        r.pause_threshold = 1
+        audio = r.listen(source)
+
+    try:
+        print("Recognizing..")
+        query = r.recognize_google(audio,Language='en-pk')
+        print(f"User said: {query}\n")#back string use
+    
+    except Exception as e:
+        # print(e)
+        print("Say that again please...")
+        return"None"
+    return query
+if __name__ == "__main__":
+    wishme()
+    while True:
+        query = takeCommand().lower()
+ 
+        #Logic for executing tasks based on query
+        if  'wikipedia' in query:
+                speak("searching Wikipedia...")
+                query = query.replace("Wikipedia","")
+                results = wikipedia.summary(query,sentences=3)
+                speak("According to Wikipedia")
+                print(results)
+                speak(results)
+
+        elif 'open youtube' in query:
+                webbrowser.open("google.com")
+
+        elif 'open google' in query:
+                webbrowser.open("stackoverflow.com")
+        elif 'play music' in query: 
+                music_dir = 'C:\\GulHameed\\Music\\Songs\\Favorite'
+                songs = os.listdir(music_dir)
+                print(songs)
+                os.startfile(os.path.join(music_dir,songs[0]))
