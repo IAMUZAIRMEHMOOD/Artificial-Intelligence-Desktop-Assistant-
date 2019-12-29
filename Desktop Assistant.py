@@ -45,6 +45,14 @@ def wishme():
         print("Say that again please...")
         return"None"
     return query
+def sendEmail(to,content):
+     server = smtplib.SMTP('smtp.gmail.com',587)
+     server.ehlo()
+     server.starttls()
+     server.login('hassam_arif@yahoo.com','your-password Here')
+     server.sendmail('hassam_arif@yahoo.com',to,content)
+     server.close()
+
 if __name__ == "__main__":
     wishme()
     while True:
@@ -69,3 +77,19 @@ if __name__ == "__main__":
                 songs = os.listdir(music_dir)
                 print(songs)
                 os.startfile(os.path.join(music_dir,songs[0]))
+        elif 'the time' in query:
+            strTime = datetime.datetime.now().strftime("%H:%M:%S")
+            speak(f"Sir, the time is {strTime}")
+        elif 'open code' in query:
+            codepath = "C:\\Users\\HasSam\\AppData\\Local\\VsCode\\Code.exe"
+            os.startfile(codepath)
+        elif 'email myself' in query:
+            try:
+                    speak("What should i say")
+                    content = takeCommand()
+                    to = "mail@gmail.com"
+                    sendEmail(to,content)
+                    speak("Email has been sent")
+            except Exception as e:
+                    print(e)
+                    speak("Sorry my Friend.Email cannot be send")

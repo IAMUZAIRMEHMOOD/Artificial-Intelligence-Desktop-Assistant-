@@ -8,3 +8,6 @@
 --Browser Used
 --Open Google 
 --Play MUsic
+--Tell System Time
+--Open Code
+--Mailing System
