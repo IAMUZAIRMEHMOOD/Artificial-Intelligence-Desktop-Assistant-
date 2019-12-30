@@ -6,8 +6,41 @@
 --Speech Recognition used
 --Wikipedia used
 --Browser Used
+--open Wikipedia
+--Open Stackoverflown
+--open Youtube
 --Open Google 
---Play MUsic
+--Play Music
 --Tell System Time
---Open Code
+--Open Vs Code
 --Mailing System
+--Open Dropbox
+--Open CCleaner
+--Open eclipse
+--Open Firefox
+--Open Foxit Reader
+--Open Google Chrome
+--Open HP Photosmart Essential
+--Open HP Solution Center
+--Open MicrosoftEdge
+--Open NetBeans
+--Open Notepad ++
+--Open VLC Media Player
+--Open VMware Workstation Pro
+--Adobe Creative Cloud
+--Backup and Sync from Google
+--Cisco Packet Tracer
+--Lightroom CC
+--Opera
+--Counter Strike 1.6
+--Onedrive
+--Call Of Duty
+        -Single Player
+        -MultiPlayer
+--Cricket 7 
+--Strike Fighter
+--Wireshark
+--Control Panel
+--cmd
+--File Explorer
+--This Pc
