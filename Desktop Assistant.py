@@ -74,7 +74,7 @@ if __name__ == "__main__":
          elif 'open google' or 'google now' or 'open search' in query:
              webbrowser.open("google.com")
          elif 'play music' or 'lets play music' or 'play music' in query: 
-             music_dir = 'M:\\Music\\Songs\\Milli'
+             music_dir = 'M:\\Music\\Mili'
              songs = os.listdir(music_dir)
              print(songs)
              os.startfile(os.path.join(music_dir,songs[0]))
