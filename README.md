@@ -1,4 +1,4 @@
-# Desktop-Voice-Assistant-Python
+# Artificial Intelligence Desktop Assistant
 --All Libraries Called 
 --Audio Voice Selected 
 --Greetings Given
